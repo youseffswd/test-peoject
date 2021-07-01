@@ -89,43 +89,7 @@ const Header = () => {
                 .to(headingP.current, { duration: 0.5, y: 0, opacity: 1 })
                 .to(line.current, { duration: 0.5, opacity: 1 }, "-=.5");
 
-            const newTl = gsap.timeline({ repeat: -1, delay: 4 });
-
-            newTl
-                .to(
-                    cards.current.querySelectorAll("div")[0],
-
-                    { duration: 5, y: -30 }
-                )
-                .to(
-                    cards.current.querySelectorAll("div")[1],
-
-                    { duration: 5, y: 30 },
-                    "-=5"
-                )
-                .to(
-                    cards.current.querySelectorAll("div")[2],
-
-                    { duration: 5, y: 30 },
-                    "-=5"
-                )
-                .to(
-                    cards.current.querySelectorAll("div")[3],
-
-                    { duration: 5, y: -30 },
-                    "-=5"
-                )
-                .to(
-                    cards.current.querySelectorAll("div")[4],
-
-                    { duration: 5, y: -30 },
-                    "-=5"
-                )
-                .to(
-                    cards.current.querySelectorAll("div"),
-
-                    { duration: 5, y: 0 }
-                );
+           
         }
     }, []);
     return (
